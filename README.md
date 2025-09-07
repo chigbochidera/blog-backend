@@ -408,3 +408,18 @@ If you have any questions or need help, please open an issue in the repository.
 ---
 
 **Happy Blogging! 🎉**
+
+## 🧑‍💼 Default Admin Account
+
+An initial admin user has been seeded for convenience in development/testing:
+
+- Email: `admin@yourdomain.com`
+- Password: `StrongPassword123`
+
+Change this password immediately after first login (or run the seeding script again with a new password):
+
+```bash
+npm run seed:admin -- "Admin" admin@yourdomain.com "NewStrongPassword123"
+```
+
+Security note: Never commit your `.env` file. Use `env.example` to share required variables.
